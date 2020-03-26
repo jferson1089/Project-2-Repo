@@ -1,0 +1,89 @@
+# React Project Application
+
+### Project Description
+
+For my second project, I would like to pull data from random user api or random api, and take this data and create a social media/ dating app.
+The random user api will be used as my "current users" and searchable via a search bar for potential friends/matches.
+
+### Random User Api
+
+-https://randomuser.me/documentation#howto
+-https://randomuser.me/
+
+Would prefer to use Random User Api I do not see that it requires a key, and did not see any type of limit.
+
+## OR
+
+### Random Api
+
+-https://randomapi.com/
+-https://randomapi.com/documentation
+
+
+Random Api is my second choice, I do see it has a limit of 500 per day upon a sign up. Which may be a problem for testing the app to show multiple users and such.
+This is the reasoning I would use it as second choice.
+
+
+####Example of Random User Api working
+
+- Link : https://randomuser.me/api/?results=2 
+- Displays two results and below is a snippet of info displayed.
+
+````{
+"results": [
+{
+"gender": "female",
+"name": {
+"title": "Ms",
+"first": "Ellie",
+"last": "Morgan"
+},
+"location": {
+"street": {
+"number": 5861,
+"name": "Kings Road"
+},
+"city": "Liverpool",
+"state": "Wiltshire",
+"country": "United Kingdom",
+"postcode": "JZ0U 9JX",
+"coordinates": {
+"latitude": "11.1648",
+"longitude": "94.8680"
+},
+"timezone": {
+"offset": "0:00",
+"description": "Western Europe Time, London, Lisbon, Casablanca"
+}
+},
+"email": "ellie.morgan@example.com",
+"login": {
+"uuid": "5aa7958f-8e7d-41cd-aa0a-c5c5bd7bc6c5",
+"username": "purplepeacock386",
+"password": "12312312",
+"salt": "4CZgV2iQ",
+"md5": "64410c8f597f4848b31715ca48798ff7",
+"sha1": "434111cdeca43deb3ac19df6b982e2c1cabde2bc",
+"sha256": "4822a0c9e7452aaf9d5e5dd302491eb5a7cbd8c845f68fbdc183d32162705616"
+},
+"dob": {
+"date": "1986-12-06T23:22:43.285Z",
+"age": 34
+},
+"registered": {
+"date": "2008-02-06T21:20:09.895Z",
+"age": 12
+},
+"phone": "015395 40826",
+"cell": "0789-962-684",
+"id": {
+"name": "NINO",
+"value": "OP 71 59 45 Z"
+},
+"picture": {
+"large": "https://randomuser.me/api/portraits/women/67.jpg",
+"medium": "https://randomuser.me/api/portraits/med/women/67.jpg",
+"thumbnail": "https://randomuser.me/api/portraits/thumb/women/67.jpg"
+},
+"nat": "GB"
+},````

@@ -61,8 +61,13 @@ For this project I have choosen to use randomuser api due to it being free and h
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [https://docs.google.com/drawings/d/1Nq3bsfNenszcLFm26oRBppGcT9zuhEJadzLIFC7lJNo/edit?usp=sharing]()
-- [https://docs.google.com/drawings/d/1YFWB2iq-qtMTws_zr0wpzUxSuu8TGxBK7TgNx3LE1ic/edit?usp=sharing]
+#####React Architecture
+
+https://docs.google.com/drawings/d/1Nq3bsfNenszcLFm26oRBppGcT9zuhEJadzLIFC7lJNo/edit?usp=sharing
+#####WireFrame-
+[https://docs.google.com/drawings/d/1YFWB2iq-qtMTws_zr0wpzUxSuu8TGxBK7TgNx3LE1ic/edit?usp=sharing] 
+#####Time Priority Matrix- 
+-https://docs.google.com/drawings/d/1NQeLwiNTL1F5ygiwYDNCkk5fLnQ4q1IxhnZ6Oa1oXd0/edit?usp=sharing
 
 
 ### MVP/PostMVP - 5min
@@ -101,8 +106,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 2hrs|  |  |
-| Working with API | H | 20 hrs|  | 2 |
+| Displaying API Data | H | 10hrs|  |  |
+| Working with API | H | 10 hrs|  |  |
+| Adding Routes/Links | H 2 hrs |  |	|
 | Total | H | 22hrs|  | |
 
 ## Additional Libraries

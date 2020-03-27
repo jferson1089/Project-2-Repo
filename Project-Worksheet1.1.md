@@ -61,33 +61,31 @@ For this project I have choosen to use randomuser api due to it being free and h
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-####React Architecture
+####WireFrame
 https://docs.google.com/drawings/d/1Nq3bsfNenszcLFm26oRBppGcT9zuhEJadzLIFC7lJNo/edit?usp=sharing
 
-####WireFrame-
+####React Architecture-
 [https://docs.google.com/drawings/d/1YFWB2iq-qtMTws_zr0wpzUxSuu8TGxBK7TgNx3LE1ic/edit?usp=sharing] 
 
 ####Time Priority Matrix- 
 -https://docs.google.com/drawings/d/1NQeLwiNTL1F5ygiwYDNCkk5fLnQ4q1IxhnZ6Oa1oXd0/edit?usp=sharing
 
 
-### MVP/PostMVP - 5min
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+### MVP/PostMVP 
 
 #### MVP 
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
--Favoriting Users
--Mobile First
--Displaying Users
+- Favoriting Users
+- Mobile First
+- Displaying Users
 
 #### PostMVP 
 
--Additional styling
-- Add localStorage or firebase for storage
--Possible Form Section?
+- Additional styling
+- Possible Form Section?
+- Any Additonal Features needed 
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
@@ -107,10 +105,13 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Displaying API Data | H | 10hrs|  |  |
-| Working with API | H | 10 hrs|  |  |
-| Adding Routes/Links | H | 2 hrs |  |	|
-| Total | H | 22hrs|  | |
+| Research | MVP| 2 hrs | 2 hrs | 2 hrs|
+| Building Components | MVP | 3 hrs | 	|	|
+| Displaying API Data | MVP | 10hrs|  |  |
+| Working with API | MVP | 10 hrs|  |  |
+| Adding Routes/Links | MVP | 2 hrs |  |	|
+|Additional Styling | postMVP | 2 hrs | 	|
+| Total | H | 29hrs|  | |
 
 ## Additional Libraries
 May be using Axios, or Postman to help with fetching api data

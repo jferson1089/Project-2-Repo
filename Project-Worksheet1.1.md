@@ -108,7 +108,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Displaying API Data | H | 10hrs|  |  |
 | Working with API | H | 10 hrs|  |  |
-| Adding Routes/Links | H 2 hrs |  |	|
+| Adding Routes/Links | H | 2 hrs |  |	|
 | Total | H | 22hrs|  | |
 
 ## Additional Libraries

@@ -61,12 +61,13 @@ For this project I have choosen to use randomuser api due to it being free and h
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-#####React Architecture
-
+####React Architecture
 https://docs.google.com/drawings/d/1Nq3bsfNenszcLFm26oRBppGcT9zuhEJadzLIFC7lJNo/edit?usp=sharing
-#####WireFrame-
+
+####WireFrame-
 [https://docs.google.com/drawings/d/1YFWB2iq-qtMTws_zr0wpzUxSuu8TGxBK7TgNx3LE1ic/edit?usp=sharing] 
-#####Time Priority Matrix- 
+
+####Time Priority Matrix- 
 -https://docs.google.com/drawings/d/1NQeLwiNTL1F5ygiwYDNCkk5fLnQ4q1IxhnZ6Oa1oXd0/edit?usp=sharing
 
 

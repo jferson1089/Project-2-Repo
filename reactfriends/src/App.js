@@ -11,11 +11,13 @@ function App() {
   return (
     <>
     <div className="App">
+
+    <header>
       <nav>
         <ul>
           <Link to="/">
             <li>
-              <a href="">Home</a>
+              <a href="">ReactFriends</a>
             </li>
           </Link>
           <Link to="/about/">
@@ -23,6 +25,22 @@ function App() {
               <a href="">About</a>
             </li>
           </Link>
+       
+          </ul>
+             </nav>
+          </header>
+          <main>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about/" component={About} />
+              <Route exact path="/users/" component={Users} />
+              <Route exact path="/users/fave" component={Favorites} />
+
+          </main>
+
+
+<footer>
+  <nav>
+    <ul>
           <Link to="/users/">
             <li>
               <a href="">Users</a>
@@ -30,15 +48,12 @@ function App() {
           </Link>
           <Link to="/users/fave">
             <li>
-              <a href="">Sign Up</a>
+              <a href="">Favorites</a>
             </li>
           </Link>
         </ul>
       </nav>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about/" component={About} />
-      <Route exact path="/users/" component={Users} />
-      <Route exact path="/users/fave" component={Favorites} />
+     </footer>
     </div>
 
    

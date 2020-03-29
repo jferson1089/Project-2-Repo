@@ -39,21 +39,28 @@
 
 
 nav {
-  background-color: coral;
+  background-color:#2A2C2E;
   height: 100px;
+  
 }
 
 ul {
-  padding-top: 75px;
+  padding-top: 25px;
   display: flex;
   justify-content: space-around;
+  
 }
 
 a {
-  color: white;
+  color:#62DAFC;
   text-decoration: none;
+  font-size:24px;
 }
 
 li {
   list-style: none;
+}
+
+main {
+  height:500px;
 }

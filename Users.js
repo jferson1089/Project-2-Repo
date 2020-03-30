@@ -1,4 +1,6 @@
 import React, {useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function  Users () {
 
@@ -24,16 +26,20 @@ function  Users () {
     {
         users.map((names , index) =>{
             return <li key={`${names.name.first}-${index}`}>
-
-            <img src={names.picture.large} alt=''/>
-
-               <h3> {names.name.first}  </h3> 
-            
-             <h4>{names.dob.age}</h4>
-              <p>{names.email}</p>
-             <p> {names.location.city}</p>
+                <div className='card'>
+            <img className='thumb' src={names.picture.large} alt=''/>
+                <div className='favorites-button'>
+                    <FontAwesomeIcon icon={faCoffee} />
+                     </div>
+                  </div>
+               <h2 className="first"> {names.name.first}  </h2> 
+                
+             <h4 className='age'>Age : {names.dob.age}</h4>
+              <p className='email'>Email : {names.email}</p>
+             <p className="location"> Location : {names.location.city}</p>
             <br/><br/>
               <hr/>
+            
             </li>
            
         })

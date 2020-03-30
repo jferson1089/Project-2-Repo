@@ -2,7 +2,7 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- https://github.com/jferson1089/Project-2-Repo/
 - [add your deployment link]()
 
 ## Project Description

@@ -46,10 +46,12 @@ header{
 }
 
 footer{
-
+  
   overflow:hidden;
   width:100%;
+  
 }
+
 
 *{
   margin:0 auto;
@@ -58,13 +60,14 @@ footer{
 nav {
   background-color:#2A2C2E;
   height: 100px;
-  
+ 
 }
 
 ul {
   padding-top: 25px;
-  display: flex;
-  justify-content: space-around;
+  display:flex;
+  
+  
   
 }
 
@@ -100,3 +103,36 @@ main {
 li{
   padding:20px;
 }
+
+.card{
+  display:grid;
+  grid-gap: 5px;
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: auto repeat(1, 1fr) auto;
+grid-template-areas:
+  "image favorite"
+  
+  
+}
+
+.thumb{
+  grid-area: image;
+}
+
+.favorites-button {
+  grid-area: favorite;
+}
+
+@media (min-width: 700px){
+ main{
+   height:770px;
+ }
+
+}
+
+@media (min-width: 1024px){
+  main{
+    height: 700px;
+  }
+ 
+ }

@@ -21,11 +21,6 @@ function App() {
                 </img>ReactFriends   </a>
             
           </Link>
-          <Link to="/about/">
-            <li>
-              <a href="">About</a>
-            </li>
-          </Link>
        
           </ul>
              </nav>
@@ -52,6 +47,15 @@ function App() {
               <a href="">Favorites</a>
             </li>
           </Link>
+   <Link to="/about/">
+            <li>
+              <a href="">About</a>
+            </li>
+          </Link>
+       
+
+
+
         </ul>
       </nav>
      </footer>

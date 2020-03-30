@@ -7,10 +7,10 @@ function  Users () {
 
     useEffect(() => {
         const getUsers = async () =>{
-            const response = await fetch('https://jsonplaceholder.typicode.com/users')
+            const response = await fetch('https://randomuser.me/api/?page=3&results=10&seed=1089abc')
             const jsonResponse =  await response.json()
-            console.log('user data response', jsonResponse)
-            setUsers(jsonResponse)
+            console.log('user data response', jsonResponse.results)
+            setUsers(jsonResponse.results)
         }
 
         getUsers()
@@ -23,9 +23,10 @@ function  Users () {
         <ul className='usersList'>
     {
         users.map((names , index) =>{
-            return <li key={`${names.name}-${index}`}>{names.name}
+            return <li key={`${names.name.first}-${index}`}>{names.name.first}
              <p>{names.email}</p>
-             <p> {names.phone}</p>
+             <p> {names.location.city}</p>
+             <img src={names.picture.thumbnail} alt=''/>
               <hr/>
             </li>
            

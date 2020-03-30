@@ -4,7 +4,14 @@ import React from 'react'
 
 function Home (){
 
-    return <div>Home Area</div>
+    return <div>
+        <h1>Hello Welcome To React Friemds</h1>
+        <ul>
+            <li>Adding content</li>
+            <li>Working with App</li>
+            <li>Adding Favorites buttons</li>
+        </ul>
+    </div>
 
 
 }

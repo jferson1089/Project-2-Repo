@@ -1,11 +1,25 @@
-import React, {useState , useEffect} from "react";
+import React, {useEffect} from "react";
 
 function  Users () {
 
+    useEffect(() => {
+
+    }, [])
 
 
 
-  return <div> We have 4...users</div>;
+  return (
+    <div className='usersCard'>
+        User information goes in these cards.
+        Image in this area
+        <h1>User Name</h1>
+        <h2>User Age</h2>
+        <h3>User Location</h3>
+   
+  </div>
+
+
+  )
 }
 
 export default Users;

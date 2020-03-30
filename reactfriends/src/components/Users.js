@@ -1,4 +1,6 @@
 import React, {useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function  Users () {
 
@@ -7,7 +9,7 @@ function  Users () {
 
     useEffect(() => {
         const getUsers = async () =>{
-            const response = await fetch('https://randomuser.me/api/?page=3&results=10&seed=1089abc')
+            const response = await fetch('https://randomuser.me/api/?page=3&results=50&seed=1089abc')
             const jsonResponse =  await response.json()
             console.log('user data response', jsonResponse.results)
             setUsers(jsonResponse.results)
@@ -23,11 +25,21 @@ function  Users () {
         <ul className='usersList'>
     {
         users.map((names , index) =>{
-            return <li key={`${names.name.first}-${index}`}>{names.name.first}
-             <p>{names.email}</p>
-             <p> {names.location.city}</p>
-             <img src={names.picture.thumbnail} alt=''/>
+            return <li key={`${names.name.first}-${index}`}>
+                <div className='card'>
+            <img className='thumb' src={names.picture.large} alt=''/>
+                <div className='favorites-button'>
+                    <FontAwesomeIcon icon={faCoffee} />
+                     </div>
+                  </div>
+               <h2 className="first"> {names.name.first}  </h2> 
+                
+             <h4 className='age'>Age : {names.dob.age}</h4>
+              <p className='email'>Email : {names.email}</p>
+             <p className="location"> Location : {names.location.city}</p>
+            <br/><br/>
               <hr/>
+            
             </li>
            
         })
@@ -37,12 +49,7 @@ function  Users () {
     }
     </ul>
 
-
-    
-
   </div>
-
-
   )
 }
 

@@ -15,6 +15,10 @@ Use this section to include info about the API you have chosen and a code snippe
 
 https://randomuser.me/api/?results=100&inc=name,gender,nat,location,picture&noinfo
 
+Using this API with seed=1089abc at the end so it returns me the same users instead of a new set of random ones.
+
+https://randomuser.me/api/?page=3&results=10&seed=1089abc
+
 For this project I have choosen to use randomuser api due to it being free and having unlimited requests. I have chose only certain date to be given back including, name, gender, nat, location, and picture. This particular result has 100 results coming back. May decrease the number to between 5-25 depending on time contraints.
 
 ```
@@ -106,10 +110,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Research | MVP| 2 hrs | 2 hrs | 2 hrs|
-| Building Components | MVP | 3 hrs | 	|	|
-| Displaying API Data | MVP | 10hrs|  |  |
-| Working with API | MVP | 10 hrs|  |  |
-| Adding Routes/Links | MVP | 2 hrs |  |	|
+| Building Components | MVP | 3 hrs | 3hrs	|	|
+| Displaying API Data | MVP | 10hrs| 8 hrs |  |
+| Working with API | MVP | 10 hrs| 2 hrs |  |
+| Adding Routes/Links | MVP | 2 hrs | 2hrs |	|
 |Additional Styling | postMVP | 2 hrs | 	|
 | Total | H | 29hrs|  | |
 

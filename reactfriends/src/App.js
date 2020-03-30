@@ -16,9 +16,10 @@ function App() {
       <nav>
         <ul>
           <Link to="/">
-            <li>
-              <a href="">ReactFriends</a>
-            </li>
+            
+              <a href=""><img src='https://res.cloudinary.com/jferson1089/image/upload/c_scale,h_59/v1585540434/iconfinder_React.js_logo_1174949_jjptab.png' alt='logo'>
+                </img>ReactFriends   </a>
+            
           </Link>
           <Link to="/about/">
             <li>

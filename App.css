@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header{
+ 
+ overflow:hidden;
+ width:100%;
+ margin:0 auto;
+ padding:0;
+}
+
+footer{
+  
+  overflow:hidden;
+  width:100%;
+  
+}
+
+
+*{
+  margin:0 auto;
+}
+
+nav {
+  background-color:#2A2C2E;
+  height: 100px;
+ 
+}
+
+ul {
+  padding-top: 25px;
+  display:flex;
+  
+  
+  
+}
+
+a {
+  color:#62DAFC;
+  text-decoration: none;
+  font-size:24px;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  height:550px;
+  margin: 25px;
+  border: 3px solid #2A2C2E;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.usersCard{
+  display:flex;
+  
+}
+
+.usersList{
+  display:flex;
+  flex-direction:column;
+  padding:30px;
+}
+
+li{
+  padding:20px;
+}
+
+.card{
+  display:grid;
+  grid-gap: 5px;
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: auto repeat(1, 1fr) auto;
+grid-template-areas:
+  "image favorite"
+  
+  
+}
+
+.thumb{
+  grid-area: image;
+}
+
+.favorites-button {
+  grid-area: favorite;
+}
+
+@media (min-width: 700px){
+ main{
+   height:770px;
+ }
+
+}
+
+@media (min-width: 1024px){
+  main{
+    height: 700px;
+  }
+ 
+ }

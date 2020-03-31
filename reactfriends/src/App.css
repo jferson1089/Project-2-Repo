@@ -70,6 +70,10 @@ ul {
   
   
 }
+.favorites-button{
+  color:#62DAFC;
+}
+
 
 a {
   color:#62DAFC;
@@ -127,6 +131,13 @@ grid-template-areas:
  main{
    height:770px;
  }
+ .usersList{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+
 
 }
 
@@ -135,4 +146,12 @@ grid-template-areas:
     height: 700px;
   }
  
+  
+
+
+  .usersList{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
  }

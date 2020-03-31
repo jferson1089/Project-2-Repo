@@ -112,9 +112,9 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Research | MVP| 2 hrs | 2 hrs | 2 hrs|
 | Building Components | MVP | 3 hrs | 3hrs	|	|
 | Displaying API Data | MVP | 10hrs| 8 hrs |  |
-| Working with API | MVP | 10 hrs| 2 hrs |  |
+| Working with API | MVP | 10 hrs| 4 hrs |  |
 | Adding Routes/Links | MVP | 2 hrs | 2hrs |	|
-|Additional Styling | postMVP | 2 hrs | 	|
+|Additional Styling | postMVP | 2 hrs | 2hrs	|
 | Total | H | 29hrs|  | |
 
 ## Additional Libraries

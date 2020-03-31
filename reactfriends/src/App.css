@@ -37,6 +37,30 @@
   }
 }
 
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+input{
+  border:2px solid #2A2C2E;
+  border-radius: 3px;
+  margin-bottom:10px;
+  width:150px;
+}
+
+.textbox{
+  height:100px;
+}
+
+button{
+  background-color:#62DAFC;
+  width:150px;
+}
+
+
+
 header{
  
  overflow:hidden;
@@ -66,8 +90,7 @@ nav {
 ul {
   padding-top: 25px;
   display:flex;
-  
-  
+  align-items:center;
   
 }
 .favorites-button{
@@ -79,6 +102,10 @@ a {
   color:#62DAFC;
   text-decoration: none;
   font-size:24px;
+}
+
+a:hover{
+  color: white;
 }
 
 li {

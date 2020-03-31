@@ -1,20 +1,48 @@
 import React from "react";
 
-function Favorites() {
+function Favorites(props) {
 
    
+    console.log('favorites log', props.fave)
+  
+
+    // const favorites = props.users.map((fave, index) =>{
+    //     return(
+          
+    //         <li className='favelist'
+    //         key={index}
+    //         onClick={() =>{
+    //             props.removeFavorite(index)
+    //         }}
+    //         >
+    //             {fave}
+    //         </li>
+    //     )
+    // } )
+
+    // const currentFave = props.fave.map((fave , index) => {
+    //     return (
+    //         <li 
+    //         key = {index} >
+    //             {fave}
+    //             </li>
+    //     )
+    // })
+  
+
+    
 
 
+  return (<div className='fave' 
 
-  return (<div className='fave' >
-      <img className='faveImag' src='' alt='' />
-      <h3>Favorited User Name</h3>
-      <h3>Favorited User Location</h3>
+  >
+     
+      <p>Favorites?</p>
+
+        {props.fave}
+    
       <hr/>
       
-
-
-
   </div>
   )
 }

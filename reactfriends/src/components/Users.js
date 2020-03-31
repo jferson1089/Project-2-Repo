@@ -9,7 +9,7 @@ function  Users () {
 
     useEffect(() => {
         const getUsers = async () =>{
-            const response = await fetch('https://randomuser.me/api/?page=3&results=50&seed=1089abc')
+            const response = await fetch('https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=50&seed=1089abc')
             const jsonResponse =  await response.json()
             console.log('user data response', jsonResponse.results)
             setUsers(jsonResponse.results)
@@ -18,7 +18,6 @@ function  Users () {
         getUsers()
     }, [])
  
-
 
   return (
     <div className='usersCard'>
@@ -37,6 +36,7 @@ function  Users () {
              <h4 className='age'>Age : {names.dob.age}</h4>
               <p className='email'>Email : {names.email}</p>
              <p className="location"> Location : {names.location.city}</p>
+             <p className="state">State : {names.location.state}</p>
             <br/><br/>
               <hr/>
             

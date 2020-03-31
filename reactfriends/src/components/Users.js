@@ -19,6 +19,10 @@ function  Users () {
     }, [])
  
 
+ 
+
+
+
   return (
     <div className='usersCard'>
         <ul className='usersList'>
@@ -27,8 +31,9 @@ function  Users () {
             return <li key={`${names.name.first}-${index}`}>
                 <div className='card'>
             <img className='thumb' src={names.picture.large} alt=''/>
-                <div className='favorites-button'>
-                    <FontAwesomeIcon icon={faCoffee} />
+                <div className='favorites-button'  >
+                    <FontAwesomeIcon icon={faCoffee} 
+                    />
                      </div>
                   </div>
                <h2 className="first"> {names.name.first}  </h2> 

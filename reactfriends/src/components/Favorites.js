@@ -42,8 +42,10 @@ function Favorites(props) {
     
 
 
-  return (<div className='fave' 
-> 
+  return ( <>
+  <h6>Favorited User</h6>
+  <div className='fave'>
+
      {favoriteReturn}
      
 
@@ -52,6 +54,7 @@ function Favorites(props) {
      
       
   </div>
+  </>
   )
 }
 

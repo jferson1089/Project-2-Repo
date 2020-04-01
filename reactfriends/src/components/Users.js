@@ -2,6 +2,7 @@ import React, {useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Favorites from './Favorites'
+import {Route} from 'react-router-dom'
 
 
 function  Users () {
@@ -11,7 +12,7 @@ function  Users () {
 
     useEffect(() => {
         const getUsers = async () =>{
-            const response = await fetch('https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=10&seed=1089abc')
+            const response = await fetch('https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=25&seed=1089abc')
             const jsonResponse =  await response.json()
             console.log('user data response', jsonResponse.results)
             setUsers(jsonResponse.results)
@@ -137,6 +138,7 @@ function  Users () {
  
  
   </div>
+
   <Favorites fave={fave} />
  </>
   )

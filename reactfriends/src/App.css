@@ -43,6 +43,16 @@ form{
   justify-content: space-between;
 }
 
+.favorites{
+  border: 3px solid #61dafb;
+  margin:10px;
+  border-radius: 5px;
+  display:flex;
+  flex-direction:row;
+  align-items: left;
+  
+}
+
 input{
   border:2px solid #2A2C2E;
   border-radius: 3px;

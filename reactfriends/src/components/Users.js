@@ -1,147 +1,126 @@
-import React, {useEffect, useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import Favorites from './Favorites'
-import {Route} from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import Favorites from "./Favorites";
+import { Route } from "react-router-dom";
 
+function Users() {
+  const [users, setUsers] = useState([]);
+  const [fave, setFave] = useState([]);
 
-function  Users () {
+  useEffect(() => {
+    const getUsers = async () => {
+      const response = await fetch(
+        "https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=25&seed=1089abc"
+      );
+      const jsonResponse = await response.json();
+      console.log("user data response", jsonResponse.results);
+      setUsers(jsonResponse.results);
+    };
 
-    const [users, setUsers] = useState([])
-    const [fave, setFave] = useState([])
+    getUsers();
+  }, []);
 
-    useEffect(() => {
-        const getUsers = async () =>{
-            const response = await fetch('https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=25&seed=1089abc')
-            const jsonResponse =  await response.json()
-            console.log('user data response', jsonResponse.results)
-            setUsers(jsonResponse.results)
-        }
+  const addToFave = elem => {
+    setFave([...fave, elem]);
+  };
 
-        getUsers()
-    }, [])
+  /*Favorites Button Addition */
 
+  // const [favorites, setFavorites] = useState([])
 
-    const addToFave = elem => {
-        setFave([...fave, elem])
-    }
+  // const addToFave = user =>{
+  //     setFavorites([...favorites, user])
+  // }
 
-    /*Favorites Button Addition */
+  // const removeFavorite = index =>{
+  //     const newFavorite = [...favorites]
+  //     newFavorite.splice(index, 1)
+  //     setFavorites(newFavorite)
+  // }
 
-    // const [favorites, setFavorites] = useState([])
+  // const [faves, setFaves] = useState([])
 
-    // const addToFave = user =>{
-    //     setFavorites([...favorites, user])
-    // }
- 
-    // const removeFavorite = index =>{
-    //     const newFavorite = [...favorites]
-    //     newFavorite.splice(index, 1)
-    //     setFavorites(newFavorite)
-    // }
+  // const handleFaveToggle = user =>{
+  //     const favesArr = faves.slice()
+  //     const userIndex = favesArr.indexOf(user)
 
-    // const [faves, setFaves] = useState([])
+  //     if(userIndex === -1){
+  //         favesArr.push(user)
+  //     } else {
+  //         favesArr.splice(userIndex, 1)
+  //     }
+  //     setFaves(favesArr)
+  //      console.log('clicked user', faves)
+  // }
+  // console.log('users- is data coming down? ', routerProps)
 
-    // const handleFaveToggle = user =>{
-    //     const favesArr = faves.slice()
-    //     const userIndex = favesArr.indexOf(user)
+  //    const users = props.map((names , index) =>{
+  //         return (<li key={`${names.name.first}-${index}`}>
+  //             <div className='card'>
+  //         <img className='thumb' src={names.picture.large} alt=''/>
 
-       
+  //             <div className='favorites-button'  >
+  //                 <FontAwesomeIcon icon={faCoffee}
+  //                  />
 
-    //     if(userIndex === -1){
-    //         favesArr.push(user)
-    //     } else {
-    //         favesArr.splice(userIndex, 1)
-    //     }
-    //     setFaves(favesArr)
-    //      console.log('clicked user', faves)
-    // }
-    // console.log('users- is data coming down? ', routerProps)
+  //                  </div>
+  //               </div>
+  //            <h2 className="first"> {names.name.first}  </h2>
 
-//    const users = props.map((names , index) =>{
-//         return (<li key={`${names.name.first}-${index}`}>
-//             <div className='card'>
-//         <img className='thumb' src={names.picture.large} alt=''/>
-        
-//             <div className='favorites-button'  >
-//                 <FontAwesomeIcon icon={faCoffee}
-//                  />
+  //          <h4 className='age'>Age : {names.dob.age}</h4>
+  //           <p className='email'>Email : {names.email}</p>
+  //          <p className="location"> Location : {names.location.city}</p>
+  //          <p className="state">State : {names.location.state}</p>
+  //         <br/><br/>
+  //           <hr/>
 
-             
-            
-//                  </div>
-//               </div>
-//            <h2 className="first"> {names.name.first}  </h2> 
-            
-//          <h4 className='age'>Age : {names.dob.age}</h4>
-//           <p className='email'>Email : {names.email}</p>
-//          <p className="location"> Location : {names.location.city}</p>
-//          <p className="state">State : {names.location.state}</p>
-//         <br/><br/>
-//           <hr/>
-        
-//         </li>
-//         )
-//     })
-
-
-
-
-
+  //         </li>
+  //         )
+  //     })
+  const removeFromFave = index => {
+    const newFave = [...fave];
+    newFave.splice(index, 1);
+    setFave(newFave);
+  };
 
   return (
-      <>
-    <div className='usersCard'>
-        <ul className='usersList'>
+    <>
+      <Favorites fave={fave} removeFromFave={removeFromFave} />
+      <hr />
+      <div className="usersCard">
+        <ul className="usersList">
+          {users.map((names, index) => {
+            return (
+              <li key={`${names.name.first}-${index}`}>
+                <div className="card">
+                  <img className="thumb" src={names.picture.large} alt="" />
 
-   
-
-    {
-       
-        users.map((names , index) =>{
-            return <li key={`${names.name.first}-${index}`}>
-                <div className='card'>
-            <img className='thumb' src={names.picture.large} alt=''/>
-                
-                <div className='favorites-button' 
-                  
-                >
-                    <FontAwesomeIcon icon={faCoffee}
-                     onClick={() => {
-                         addToFave(names)
-                     }}
-                     />
-
-                 
-                
-                     </div>
+                  <div className="favorites-button">
+                    <FontAwesomeIcon
+                      icon={faCoffee}
+                      onClick={() => {
+                        addToFave(names);
+                      }}
+                    />
                   </div>
-               <h2 className="first"> {names.name.first}  </h2> 
-                
-             <h4 className='age'>Age : {names.dob.age}</h4>
-              <p className='email'>Email : {names.email}</p>
-             <p className="location"> Location : {names.location.city}</p>
-             <p className="state">State : {names.location.state}</p>
-            <br/><br/>
-              <hr/>
-            
-            </li>
-           
-        })
+                </div>
+                <h2 className="first"> {names.name.first} </h2>
 
-
-
-    }
-    </ul>
-
-
- 
- 
-  </div>
-
-  <Favorites fave={fave} />
- </>
-  )
+                <h4 className="age">Age : {names.dob.age}</h4>
+                <p className="email">Email : {names.email}</p>
+                <p className="location"> Location : {names.location.city}</p>
+                <p className="state">State : {names.location.state}</p>
+                <br />
+                <br />
+                <hr />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default Users;

@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function Feedback (){
-
-
-    return <div className='usersCard'>
-        FeedBack Section <br/>
-       Nothing here...Yet
-        
+function Feedback() {
+  return (
+    <div className="usersCard">
+      FeedBack Section <br />
+      Nothing here...Yet
     </div>
+  );
 }
 
-export default Feedback
+export default Feedback;

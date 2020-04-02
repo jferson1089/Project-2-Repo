@@ -100,7 +100,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Home | Will include the main navigation of the page | 
-| Main | This is where users and favorites will render depending on the link | 
+| About | Info on the App | 
+|Feedback | Will display a form and is rendered in About section |
 | Users| This will display a random amount of users|
 | Favorites| This will favorite the random users|
 
@@ -110,12 +111,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Research | MVP| 2 hrs | 2 hrs | 2 hrs|
-| Building Components | MVP | 3 hrs | 3hrs	|	|
-| Displaying API Data | MVP | 10hrs| 8 hrs |  |
-| Working with API | MVP | 10 hrs| 4 hrs |  |
-| Adding Routes/Links | MVP | 2 hrs | 2hrs |	|
+| Building Components | MVP | 3 hrs | 3hrs	| 3hrs	|
+| Displaying API Data | MVP | 10hrs| 10 hrs | 10hrs |
+| Working with API | MVP | 10 hrs| 10 hrs | 10hrs |
+| Adding Routes/Links | MVP | 2 hrs | 2hrs | 2hrs	|
 |Additional Styling | postMVP | 2 hrs | 2hrs	|
-| Total | H | 29hrs|  | |
+| Total | H | 29hrs| 29hrs | 29hrs|
 
 ## Additional Libraries
 May be using Axios, or Postman to help with fetching api data
@@ -124,12 +125,20 @@ https://www.npmjs.com/package/@fortawesome/react-fontawesome
 
 Imported FontAwesome Icons for users
 
+https://stackoverflow.com/questions/4069734/fixed-header-footer-with-scrollable-content
+
+Used as source for fixed header/footer and scrolling middle section for Users.
+
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+This was a design I actually wanted to use in my portfolio site that did not go as smoothly. I wanted fixed headers and footers with the middle section being scrollable as seen in pretty much every social media type app. I am very happy with how it came out and feel it gives my app a professional feel when using. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+main {
+  height: 550px;
+  margin: 25px;
+  border: 3px solid #2a2c2e;
+  border-radius: 5px;
+  overflow: auto;
 }
 ```

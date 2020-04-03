@@ -116,7 +116,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Displaying API Data | MVP | 10hrs| 10 hrs | 10hrs |
 | Working with API | MVP | 10 hrs| 10 hrs | 10hrs |
 | Adding Routes/Links | MVP | 2 hrs | 2hrs | 2hrs	|
-|Additional Styling | postMVP | 2 hrs | 2hrs	|
+|Additional Styling | postMVP | 2 hrs | 2hrs	| 2hrs|
 | Total | H | 29hrs| 35hrs | 35hrs|
 
 ## Additional Libraries
@@ -146,3 +146,6 @@ main {
   overflow: auto;
 }
 ```
+
+## Issues
+Only issue I came across during the project was using a randomy user API would give random users each time it was rendered. To fix this issue I used a seed code in the API url which would save the same users each time, making them able to be favorited.

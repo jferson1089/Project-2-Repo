@@ -4,6 +4,7 @@
 
 - https://github.com/jferson1089/Project-2-Repo/
 - https://fervent-fermi-bbcf3c.netlify.com
+- https://youtu.be/tLW18DJNSu8
 
 ## Project Description
 

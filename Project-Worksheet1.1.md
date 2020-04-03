@@ -3,7 +3,7 @@
 ## Project Links
 
 - https://github.com/jferson1089/Project-2-Repo/
-- https://fervent-fermi-bbcf3c.netlify.com/()
+- https://fervent-fermi-bbcf3c.netlify.com
 
 ## Project Description
 

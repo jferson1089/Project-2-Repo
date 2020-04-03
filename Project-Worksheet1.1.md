@@ -3,7 +3,7 @@
 ## Project Links
 
 - https://github.com/jferson1089/Project-2-Repo/
-- [add your deployment link]()
+- https://fervent-fermi-bbcf3c.netlify.com/()
 
 ## Project Description
 
@@ -17,9 +17,9 @@ https://randomuser.me/api/?results=100&inc=name,gender,nat,location,picture&noin
 
 Using this API with seed=1089abc at the end so it returns me the same users instead of a new set of random ones.
 
-https://randomuser.me/api/?page=3&results=10&seed=1089abc
+https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=40&seed=1089abc
 
-For this project I have choosen to use randomuser api due to it being free and having unlimited requests. I have chose only certain date to be given back including, name, gender, nat, location, and picture. This particular result has 100 results coming back. May decrease the number to between 5-25 depending on time contraints.
+For this project I have choosen to use randomuser api due to it being free and having unlimited requests. I have chose only certain date to be given back including, name, gender, nat, location, and picture. For this particular project I have 40 users displaying, can run up to 500 with this api
 
 ```
 {data: {
@@ -110,24 +110,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Research | MVP| 2 hrs | 2 hrs | 2 hrs|
+| Research | MVP| 2 hrs | 6 hrs | 6 hrs|
 | Building Components | MVP | 3 hrs | 3hrs	| 3hrs	|
 | Displaying API Data | MVP | 10hrs| 10 hrs | 10hrs |
 | Working with API | MVP | 10 hrs| 10 hrs | 10hrs |
 | Adding Routes/Links | MVP | 2 hrs | 2hrs | 2hrs	|
 |Additional Styling | postMVP | 2 hrs | 2hrs	|
-| Total | H | 29hrs| 29hrs | 29hrs|
+| Total | H | 29hrs| 35hrs | 35hrs|
 
 ## Additional Libraries
-May be using Axios, or Postman to help with fetching api data
 
-https://www.npmjs.com/package/@fortawesome/react-fontawesome
+Used this video for useEffect() fetching the API
+
+https://www.youtube.com/watch?v=ZUs7z7jxSH0
 
 Imported FontAwesome Icons for users
 
-https://stackoverflow.com/questions/4069734/fixed-header-footer-with-scrollable-content
+https://fontawesome.com/how-to-use/with-the-api/setup/importing-icons
 
 Used as source for fixed header/footer and scrolling middle section for Users.
+
+https://stackoverflow.com/questions/4069734/fixed-header-footer-with-scrollable-content
 
 ## Code Snippet
 

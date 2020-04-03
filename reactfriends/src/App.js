@@ -3,25 +3,9 @@ import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
 import Users from "./components/Users";
-import Favorites from "./components/Favorites";
 import { Route, Link } from "react-router-dom";
 
 function App() {
-  // const [users, setUsers] = useState([])
-
-  // useEffect(() => {
-  //     const getUsers = async () =>{
-  //         const response = await fetch('https://randomuser.me/api/?inc=gender,name,nat=us,picture,dob,location,email&results=10&seed=1089abc')
-  //         const jsonResponse =  await response.json()
-  //         console.log('user data response', jsonResponse.results)
-  //         setUsers(jsonResponse.results)
-  //     }
-
-  //     getUsers()
-  // }, [])
-
-  // console.log('app getusers running', users)
-
   return (
     <>
       <div className="App">
@@ -44,7 +28,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about/" component={About} />
           <Route exact path="/users/" component={Users} />
-          {/* <Route exact path="/users/fave" component={Favorites} /> */}
         </main>
 
         <footer>

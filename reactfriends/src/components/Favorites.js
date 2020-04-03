@@ -1,31 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAddressBook } from "@fortawesome/free-solid-svg-icons";
 
 function Favorites(props) {
-  console.log("favorites log", props.fave);
-
-  // const favorites = props.users.map((fave, index) =>{
-  //     return(
-
-  //         <li className='favelist'
-  //         key={index}
-  //         onClick={() =>{
-  //             props.removeFavorite(index)
-  //         }}
-  //         >
-  //             {fave}
-  //         </li>
-  //     )
-  // } )
-
-  // const currentFave = props.fave.map((fave , index) => {
-  //     return (
-  //         <li
-  //         key = {index} >
-  //             {fave}
-  //             </li>
-  //     )
-  // })
-
   const favoriteReturn = props.fave.map((favorite, index) => {
     console.log("favorites return?", favorite);
     return (
@@ -36,13 +13,14 @@ function Favorites(props) {
           <div className="faveInfo">
             <h2>{favorite.name.first}</h2>
             <h4>City:{favorite.location.city}</h4>
-            <p
+            <br />
+            <FontAwesomeIcon
+              icon={faAddressBook}
               onClick={() => {
                 props.removeFromFave(index);
               }}
-            >
-              UnFavorite Here
-            </p>
+            />
+            Remove User
           </div>
         </li>
       </>

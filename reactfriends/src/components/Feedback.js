@@ -1,11 +1,11 @@
 import React from "react";
 
-function Feedback() {
+function Feedback(props) {
   return (
-    <div className="usersCard">
-      FeedBack Section <br />
-      Nothing here...Yet
-    </div>
+    <>
+      <h2>Feed Back Section</h2>
+      <h5> - {props.input}</h5>
+    </>
   );
 }
 
